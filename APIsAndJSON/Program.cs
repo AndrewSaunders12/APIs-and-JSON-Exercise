@@ -6,8 +6,12 @@ namespace APIsAndJSON
     {
         static void Main(string[] args)
         {
-            RonVSKanyeAPI.KanyeQuote();
-            RonVSKanyeAPI.RonQuote();
+            for (int i = 0; i < 5; i++)
+            {
+                RonVSKanyeAPI.KanyeQuote();
+                RonVSKanyeAPI.RonQuote();
+            }
+
             OpenWeatherMapAPI.WeatherMapAPI();
         }
     }
